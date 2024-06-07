@@ -14,18 +14,10 @@ export const CHAIN_IDS = chains.map((chain) => chain.id);
 export const injectedConnector = injected({
   shimDisconnect: false,
 });
-export const coinbaseConnector = coinbaseWallet({
-  appName: "Your App Name",
-  appLogoUrl: "https://xxx.com/logo.png",
-});
-export const walletConnectConnector = walletConnect({
-  showQrModal: process.env.NODE_ENV !== "test",
-  projectId: "e542ff314e26ff34de2d4fba98db70bb",
-});
-export const walletConnectNoQrCodeConnector = walletConnect({
-  showQrModal: false,
-  projectId: "e542ff314e26ff34de2d4fba98db70bb",
-});
+// export const coinbaseConnector = coinbaseWallet({
+//   appName: "Your App Name",
+//   appLogoUrl: "https://xxx.com/logo.png",
+// });
 export const metaMaskConnector = injected({
   target: "metaMask",
   shimDisconnect: false,
@@ -59,8 +51,8 @@ export function createWagmiConfig() {
     // ...CLIENT_CONFIG,
     connectors: [
       injectedConnector,
-      coinbaseConnector,
-      walletConnectConnector,
+      // coinbaseConnector,
+
       metaMaskConnector,
       trustConnector,
     ],

@@ -17,7 +17,8 @@
     "react": "^18",
     "react-dom": "^18",
     "viem": "^2.13.6",
-    "wagmi": "^2.9.9"
+    "wagmi": "^2.9.9",
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.4",
