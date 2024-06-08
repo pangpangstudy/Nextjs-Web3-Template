@@ -3,3 +3,4 @@ export type PageMeta = {
   description?: string;
   image?: string;
 };
+export type LocalePrefix = "never" | "as-needed" | "always";

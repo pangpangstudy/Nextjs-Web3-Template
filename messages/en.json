@@ -1,5 +1,12 @@
 {
   "Index": {
     "title": "create web3 Template"
+  },
+  "LocaleLayout": {
+    "title": "Your App Name",
+    "description": "Your App description",
+    "openGraphTitle": "Your App Title - The Best Place for Your Needs",
+    "openGraphDescription": "Discover amazing features and services on our platform",
+    "keywords": "You keywords"
   }
 }

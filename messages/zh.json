@@ -1,0 +1,12 @@
+{
+  "Index": {
+    "title": "创建web3 模板"
+  },
+  "LocaleLayout": {
+    "title": "您的应用名称",
+    "description": "您的应用描述",
+    "openGraphTitle": "您的应用标题 - 满足您需求的最佳平台",
+    "openGraphDescription": "在我们的平台上发现惊人的功能和服务",
+    "keywords": "你的关键字"
+  }
+}
