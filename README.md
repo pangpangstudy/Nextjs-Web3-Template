@@ -19,6 +19,10 @@ Contract Method Encapsulation: Provides convenient wrappers for interacting with
 Gas Estimation for Contract Methods: Includes functions to estimate gas usage for contract interactions.
 SEO Optimization: Implements SEO best practices for better search engine visibility.
 
+**I would be grateful for your support**
+This is my Ethereum address
+**0xdd3f974dd1a4689d1f132d64318c019768a13da7**
+
 # 中文
 
 Web3 Next.js 模板
@@ -32,6 +36,9 @@ Web3 Next.js 模板
 合约方法封装：提供方便的封装函数与智能合约交互。
 合约方法的 Gas 估算：包括估算合约交互的 gas 使用量的函数。
 SEO 优化：实现 SEO 最佳实践，以提高搜索引擎的可见性。
+**我将非常感谢您的支持**
+这是我的以太坊账号
+**0xdd3f974dd1a4689d1f132d64318c019768a13da7**
 
 贡献
 欢迎贡献！请提出问题或提交你的改进的拉取请求。
