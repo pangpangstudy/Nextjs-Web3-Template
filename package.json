@@ -8,10 +8,30 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browserslist": {
+    "production": [
+      "chrome >= 67",
+      "edge >= 79",
+      "firefox >= 68",
+      "opera >= 54",
+      "safari >= 14"
+    ],
+    "development": [
+      ">0.2%",
+      "not ie <= 99",
+      "not android <= 4.4.4",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
     "@tanstack/react-query": "^5.40.1",
     "lodash": "^4.17.21",
     "next": "14.2.3",
+    "next-intl": "^3.14.1",
     "next-seo": "^6.5.0",
     "p-retry": "^6.2.0",
     "react": "^18",

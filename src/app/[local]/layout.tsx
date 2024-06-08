@@ -3,8 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Providers from "@/contexts/Providers";
-import Init from "./components/Layout/Init";
-
+import Init from "../components/Layout/Init";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,18 +18,24 @@ export const metadata: Metadata = {
   },
 };
 // TODO:NEXT_SEO
-export default function RootLayout({
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params: { locale },
+}: {
   children: React.ReactNode;
-}>) {
+  params: { locale: string };
+}) {
+  const messages = await getMessages();
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={inter.className}>
-        <Providers>
-          <Init />
-          {children}
-        </Providers>
+        {" "}
+        <NextIntlClientProvider messages={messages}>
+          <Providers>
+            <Init />
+            {children}
+          </Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
