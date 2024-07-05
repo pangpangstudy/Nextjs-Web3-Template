@@ -11,6 +11,7 @@ export default function LanguageSwitcher() {
   ] as { label: string; local: Locale }[];
   const locale = useLocale() as Locale;
   function handleLocaleChange(newLocale: Locale): void {
+    console.log(newLocale);
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
     router.refresh();
   }

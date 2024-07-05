@@ -1,4 +1,3 @@
-import { getRequestConfig } from "next-intl/server";
 import { LocalePrefix } from "./types";
 import {
   Pathnames,
