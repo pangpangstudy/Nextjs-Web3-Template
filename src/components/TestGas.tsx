@@ -12,7 +12,7 @@ const Test = (props: Props) => {
   const { data: walletClient } = useWalletClient();
   useEffect(() => {
     connect({ chainId: 97, connector: metaMaskConnector });
-  }, []);
+  }, [connect]);
   const contract = useTokenContract(
     "0x791518786955CA63903fcC22e45bAd82c0aFF07A"
   );

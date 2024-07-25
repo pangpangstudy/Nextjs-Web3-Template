@@ -33,6 +33,7 @@ export async function generateMetadata({
       title: t("title"),
       description: t("description"),
       keywords: t("keywords"),
+      manifest: "/manifest.json",
       openGraph: {
         title: t("openGraphTitle"),
         description: t("openGraphDescription"),
@@ -43,9 +44,10 @@ export async function generateMetadata({
     console.error("Error generating metadata:", error);
     return {
       metadataBase: new URL(process.env.BASE_URL!),
-      title: "Your App Name",
+      title: "PWA Next.js",
       description: "Your App description",
       keywords: "you keywords",
+      manifest: "/manifest.json",
       openGraph: {
         title: "Your App Title - The Best Place for Your Needs",
         description: "Discover amazing features and services on our platform",
